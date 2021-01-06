@@ -7,6 +7,7 @@ import CatNew from './pages/CatNew'
 import CatShow from './pages/CatShow'
 import Home from './pages/Home'
 import NotFound from './pages/NotFound'
+import mockCats from './mockCats.js'
 
 import './App.css'
 import {
@@ -16,7 +17,14 @@ import {
 } from "react-router-dom"
 
 class App extends Component {
-    render(){
+  constructor(props){
+    super(props)
+    this.state = {
+      cats: mockCats
+    }
+  }
+  
+  render(){
         return(
             <Router>
               <Header />
