@@ -4,7 +4,7 @@ class Show extends Component {
     render(){
         return(
             <>
-                <h1>Specific Cat here! maow</h1>
+                <h1>Specific Cat Here! Maow!</h1>
             </>
         )
     }
