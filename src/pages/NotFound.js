@@ -5,6 +5,7 @@ class NotFound extends Component {
         return(
             <>
                 <h1>Looks like you're lost!</h1>
+                    <h6>Add More Styling</h6>
             </>
         )
     }

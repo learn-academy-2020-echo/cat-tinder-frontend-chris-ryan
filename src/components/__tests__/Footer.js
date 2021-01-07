@@ -9,5 +9,5 @@ Enzyme.configure({ adapter: new Adapter() })
 
 it('Home renders content', () => {
     const comprender = shallow(<Footer />)
-    expect(comprender.find('h1').text()).toEqual('Footer')
+    expect(comprender.find('h6').text()).toEqual('Footer')
 })
