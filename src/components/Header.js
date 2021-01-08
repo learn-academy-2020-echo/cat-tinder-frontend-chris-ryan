@@ -8,7 +8,7 @@ class Header extends Component {
         return(
             <>
                 <h1>Header</h1>
-                <Jumbotron fluid class="jumbotron">
+                <Jumbotron fluid id="jumbotron">
                     {/* <a href="/"><img src={ catlogo } alt="cat logo" id="cat-logo" /></a> */}
                     <Container fluid>
                         <h2 className="display-3">FelineFarmers.com</h2>
