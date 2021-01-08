@@ -7,7 +7,7 @@ import CatNew from './pages/CatNew'
 import CatShow from './pages/CatShow'
 import Home from './pages/Home'
 import NotFound from './pages/NotFound'
-import mockCats from './mockCats.js'
+import catz from './mockCats.js'
 
 import './App.css'
 import {
@@ -20,7 +20,7 @@ class App extends Component {
   constructor(props){
     super(props)
     this.state = {
-      cats: mockCats
+      cats: catz
     }
   }
   
@@ -36,9 +36,20 @@ class App extends Component {
                   path='/catindex'
                   render={ (props) => <CatIndex cats={ this.state.cats } />}
                   />
-                
                
-                <Route path='/catshow' component={ CatShow } />
+                <Route 
+                  path='/catshow/:id' 
+                  render={ (props) => {
+                      const id = props.match.params.id
+                      //console.log(typeOf id)
+                      
+                      let cat = this.state.cats.find(cat => cat.id === parseInt(id))
+                      
+                      return <CatShow cat={ cat } />
+                  }}
+                />
+
+
                 <Route path='/catnew' component={ CatNew } />
                 <Route path='/catedit' component={ CatEdit } />
                 <Route component={ NotFound } />
