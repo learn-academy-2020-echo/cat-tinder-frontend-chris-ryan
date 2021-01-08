@@ -11,7 +11,7 @@ class CatIndex extends Component {
                 { this.props.cats.map((cat, index) => {
                     return (
                         //<p key={index}>{ cat.name}</p>
-                        <a href={'/catshow/${cat.id}'}><p key={ index }>{ cat.name }</p></a>
+                        <a href={`/catshow/${cat.id}`}><p key={ index }>{ cat.name }</p></a>
                         
                     )
                 })}

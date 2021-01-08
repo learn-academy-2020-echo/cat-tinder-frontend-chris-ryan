@@ -41,7 +41,7 @@ class App extends Component {
                   path='/catshow/:id' 
                   render={ (props) => {
                       const id = props.match.params.id
-                      //console.log(typeOf id)
+                      console.log(props.match.params.id)
                       
                       let cat = this.state.cats.find(cat => cat.id === parseInt(id))
                       
