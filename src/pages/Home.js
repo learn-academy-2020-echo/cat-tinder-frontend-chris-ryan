@@ -5,7 +5,7 @@ class Home extends Component {
         return(
             <>
                 <h1>Home Page!</h1>
-                    <h6>Add More Styling</h6>
+                <h6>Click on All Cats to show our Friendly Felines!</h6>
             </>
         )
     }
