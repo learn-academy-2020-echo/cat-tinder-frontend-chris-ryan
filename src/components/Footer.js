@@ -4,16 +4,16 @@ class Footer extends Component {
     render(){
         return(
             <div>
-                 <h6>Footer</h6>
+               
               <Nav>
                 <NavItem>
-                  <NavLink href="#">Home</NavLink>
+                  <NavLink href="/">Home</NavLink>
                 </NavItem>
                 <NavItem>
-                  <NavLink href="#">All Cats</NavLink>
+                  <NavLink href="/catindex/">All Cats</NavLink>
                 </NavItem>
                 <NavItem>
-                  <NavLink href="#">Add Cat</NavLink>
+                  <NavLink href="/catnew">Add Cat</NavLink>
                 </NavItem>
               </Nav>
             </div>
